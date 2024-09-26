@@ -19,7 +19,6 @@ import com.vivek.quizapp.service.QuestionService;
 @RestController
 @RequestMapping("/question")
 public class QuestionController {
-
 	@Autowired
 	QuestionService service;
 	
