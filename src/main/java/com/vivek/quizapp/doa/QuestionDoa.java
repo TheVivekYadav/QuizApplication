@@ -13,6 +13,6 @@ public interface QuestionDoa extends JpaRepository<Question, Integer>{
 	List<Question> findByCategory(String category);
 
 	
-	@Query("Select * from qustion q where q.category=:actegory ")
-	List<Question> findRandomQuestionByCategory(String category, int num);
+//	@Query("Select * from question q where q.category=:category ")
+//	List<Question> findRandomQuestionByCategory(String category, int num);
 }

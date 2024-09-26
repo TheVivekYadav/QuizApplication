@@ -3,6 +3,7 @@ package com.vivek.quizapp.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -22,9 +23,10 @@ public class QuizService {
 
 	public ResponseEntity<String> createQuiz(String category, int numberOfQuestions, String title) {
 		
-		List<Question> questions = questionDoa.findRandomQuestionByCategory(category, numberOfQuestions);		
-		Quiz quiz = new Quiz();
-		quiz.setTitle(title);
+//		List<Question> questions = questionDoa.findRandomQuestionByCategory(category, numberOfQuestions);
+//		Quiz quiz = new Quiz();
+//		quiz.setTitle(title);
 //		quiz.setQuestions();
+		return new ResponseEntity<>("Success", HttpStatus.OK);
 	}
 }
